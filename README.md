@@ -169,6 +169,3 @@ Add `<ngrok-url>/api/webhooks/github` as webhook payload URL, subscribed to **Pu
 
 ---
 
-## 📝 License
-
-MIT © [Vikas Pandey](https://github.com/vikas1311code)
