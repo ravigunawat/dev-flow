@@ -49,55 +49,6 @@ The moment a developer opens or updates a PR, DevFlow:
 
 ---
 
-## 📸 Screenshots
-
-<table>
-<tr>
-<td width="50%">
-
-**Landing**
-![Landing](docs/screenshots/landing.png)
-
-</td>
-<td width="50%">
-
-**Dashboard**
-![Dashboard](docs/screenshots/dashboard.png)
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-**Analytics Overview**
-![Overview](docs/screenshots/overview.png)
-
-</td>
-<td width="50%">
-
-**Sprint Board**
-![Sprint Board](docs/screenshots/sprint-board.png)
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-**AI Review on GitHub**
-![AI Review](docs/screenshots/ai-review.png)
-
-</td>
-<td width="50%">
-
-**Webhook Settings**
-![Settings](docs/screenshots/settings.png)
-
-</td>
-</tr>
-</table>
-
----
-
 ## 🧠 How it works
 
 ```
@@ -156,7 +107,6 @@ dev-flow/
 │   └── src/
 │       ├── app/            # pages (landing, dashboard, auth)
 │       └── lib/            # api client, auth context
-├── docs/screenshots/
 └── docker-compose.yml
 ```
 
