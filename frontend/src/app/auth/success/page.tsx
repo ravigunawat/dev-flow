@@ -12,8 +12,7 @@ function AuthSuccessInner() {
     const token = params.get("token");
     const refresh = params.get("refresh");
     if (token && refresh) {
-      login(token, refresh);
-      router.push("/dashboard");
+      login(token, refresh).then(() => router.push("/dashboard"));
     } else {
       router.push("/");
     }
