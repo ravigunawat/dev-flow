@@ -128,7 +128,7 @@ export default function Dashboard() {
         {showConnect && (
           <div className="mb-6 p-4 rounded-lg border animate-fade-in" style={{ borderColor: "var(--border)", background: "var(--surface)" }}>
             <label className="text-sm font-mono block mb-2" style={{ color: "var(--text-muted)" }}>
-              owner/repo (e.g. vikas1311code/devflow-test)
+              owner/repo (e.g. ravigunawat/dev-flow)
             </label>
             <div className="flex flex-col sm:flex-row gap-2">
               <input
