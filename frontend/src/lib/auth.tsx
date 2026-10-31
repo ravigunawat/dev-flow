@@ -13,14 +13,14 @@ interface User {
 interface AuthContextType {
   user: User | null;
   loading: boolean;
-  login: (token: string, refresh: string) => void;
+  login: (token: string, refresh: string) => Promise<void>;
   logout: () => void;
 }
 
 const AuthContext = createContext<AuthContextType>({
   user: null,
   loading: true,
-  login: () => {},
+  login: async () => {},
   logout: () => {},
 });
 
@@ -49,10 +49,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     fetchUser();
   }, []);
 
-  const login = (token: string, refresh: string) => {
+  const login = async (token: string, refresh: string) => {
     localStorage.setItem("devflow_token", token);
     localStorage.setItem("devflow_refresh", refresh);
-    fetchUser();
+    setLoading(true);
+    await fetchUser();
   };
 
   const logout = () => {
